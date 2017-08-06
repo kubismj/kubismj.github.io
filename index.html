@@ -10,39 +10,40 @@
     <form action="https://formspree.io/kubis.m.j@gmail.com"
       method="POST">
       
-    <label for="imie">Imie</label>
+    <label id="imie">Imie</label>
     	<input type="text" name="name" id="imie"><br>
     
-    <label for="nazwisko">Nazwisko</label>
+    <label id="nazwisko">Nazwisko</label>
     	<input type="text" name="nazwisko" id="nazwisko"><br>
     
-    <label for="email">Email</label>
+    <label id="email">Email</label>
     	<input type="text" name="email" id="email"><br>
     
-    <label for="nr-tel">Nr tel</label>
+    <label id="nr-tel">Nr tel</label>
     	<input type="text" name="nr-tel" id="nr-tel"><br>
     
     <label for="miasto">Miasto</label>
-       	<select for="miasto">
+       	<select id="miasto">
         <option type="radio" name="miasto" value="krakow">Krakow<br>
         <option type="radio" name="miasto" value="warszawa">Warszawa<br>
         <option input type="radio" name="miasto" value="gdansk">Gdansk<br>
     	</select>
     
-    <label for="plec">Płeć</label>
-    	<input type="radio" name="plec" input="mezczyzna" checked> Mężczyzna<br>
-    	<input type="radio" name="plec" input="kobieta" checked> Kobieta<br>
+    <p>Płeć:</p>
+    <label id="plec"></label>
+    	<input type="radio" name="plec" checked>Mężczyzna<br>
+    	<input type="radio" name="plec" checked>Kobieta<br>
     
-  
-    <label for="wiadomosc">Zgoda na przetwarzanie danych:</label>
-		<input type="checkbox">Wyrażam zgodę na przetwarzanie podanych danych osobowych w celach ......
-		<br>
+  	<p></p>
+    <label id="zgoda">Zgoda na przetwarzanie danych:</label>
+		<input type="checkbox">Wyrażam zgodę na przetwarzanie podanych danych osobowych w celach ......<br>
     
-    <label for="wiadomosc">Wiadomość:</label>
-		<textarea type="text" maxlength="1000" id="wiadomosc">wpisz wiadomość</textarea>
+    <p></p>
+    <label id="wiadomosc">Wiadomość:</label>
+		<input type="textarea" maxlength="1000"><br>
     
-    
-	<label for="submit">Wyślij formularz:</label>
+    <p></p>
+	<label id="submit">Wyślij formularz:</label>
     	<input type="submit" name="submit" value="wyślij"><br>
     
     </form>
