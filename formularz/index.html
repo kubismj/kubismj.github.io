@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Formularz</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   
-    <form action="https://formspree.io/kubis.m.j@gmail.com"
-      method="POST">
-      
-    <label id="imie">Imie</label>
-    	<input type="text" name="name" id="imie"><br>
-    
-    <label id="nazwisko">Nazwisko</label>
-    	<input type="text" name="nazwisko" id="nazwisko"><br>
-    
-    <label id="email">Email</label>
-    	<input type="text" name="email" id="email"><br>
-    
-    <label id="nr-tel">Nr tel</label>
-    	<input type="text" name="nr-tel" id="nr-tel"><br>
-    
-    <label for="miasto">Miasto</label>
-       	<select id="miasto">
-        <option type="radio" name="miasto" value="krakow">Krakow<br>
-        <option type="radio" name="miasto" value="warszawa">Warszawa<br>
-        <option input type="radio" name="miasto" value="gdansk">Gdansk<br>
+
+	<form action="https://formspree.io/kubis.m.j@gmail.com" method="POST">
+
+		<label for="imie">Imie</label>
+		<input type="text" name="name" id="imie"><br>
+
+		<label for="nazwisko">Nazwisko</label>
+		<input type="text" name="nazwisko" id="nazwisko"><br>
+
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email"><br>
+
+		<label for="nr-tel">Nr tel</label>
+		<input type="text" name="nr-tel" id="nr-tel"><br>
+
+		<label for="miasto">Miasto</label>
+		<select id="miasto">
+        <option>Krakow<option>
+        <option>Warszawa<option>
+        <option>Gdansk<option>
     	</select>
-    
-    <p>Płeć:</p>
-    <label id="plec"></label>
-    	<input type="radio" name="plec" checked>Mężczyzna<br>
-    	<input type="radio" name="plec" checked>Kobieta<br>
-    
-  	<p></p>
-    <label id="zgoda">Zgoda na przetwarzanie danych:</label>
-		<input type="checkbox">Wyrażam zgodę na przetwarzanie podanych danych osobowych w celach ......<br>
-    
-    <p></p>
-    <label id="wiadomosc">Wiadomość:</label>
-		<input type="textarea" maxlength="1000"><br>
-    
-    <p></p>
-	<label id="submit">Wyślij formularz:</label>
-    	<input type="submit" name="submit" value="wyślij"><br>
-    
-    </form>
+
+		<p>Płeć:</p>
+		<label for="male"></label>
+		<input type="radio" name="plec" id="male" value="male">Mężczyzna<br>
+		<label for="female"></label>
+		<input type="radio" name="plec" id="female" value="female">Kobieta<br>
+
+		<p></p>
+		<label for="zgoda">Zgoda na przetwarzanie danych:</label><br>
+		<input type="checkbox" id="zgoda" value="tak">Wyrażam zgodę na przetwarzanie podanych danych osobowych w celach ......<br>
+
+		<p>Wiadomość:</p>
+		<label for="wiadomosc"></label>
+		<input type="textarea" rows="4" cols="50" autofocus id="wiadomosc"><br>
+
+		<p></p>
+		<label for="send">Wyślij formularz:</label>
+		<input type="submit" name="submit" value="wyślij" id="send"><br>
+
+	</form>
+
+	<p><strong>UWAGA:</strong> To jest formularz testowy.</p>
 
 </body>
+
 </html>
