@@ -2,11 +2,13 @@ body {
 	background-color: white;
 	font-family: Verdana, sans-serif;
 	text-transform: uppercase;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
-#header {
+.header {
 	position: fixed;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0);
 	top: 0;
 	right: 0;
 } 
